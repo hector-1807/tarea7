@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sigmar+One&family=Tajawal:wght@200&display=swap');
+
+
+body{
+	background:#F0EDE5 ;
+}
+nav{
+
+	background: #878080;
+	font-family: 'Sigmar One';
+	font-size: 30px;
+	
+}
+.card{
+	
+	font-family: 'Shadows Into Light';
+	background: #FF1414 ;
+	color: #000000
+	
+}
+.btn1{
+
+	font-family: 'Shadows Into Light';
+	margin: 50px;
+	background: #000000;
+
+}
+footer{
+	padding: 20px;
+	text-align: center;
+	font-family: 'Lobster';
+	background: #8F9A6E;
+	font-size: 20px;
+	overflow: hidden;
+
+}
+h1{
+	font-family: "Sigmar One";
+	color: #4A4031;
+	font-size: 30px;
+
+}
+h2{
+	font-family: "Sigmar One";
+	color:#000000;
+
+}
+.letra{
+	text-align: center;
+	font-family: 'Shadows Into Light';
+	font-size: 25px;
+}
+h4{
+	font-size: 15px;
+	text-align: justify;
+	font-family: "Sigmar One";
+	color: #ffffff;
+}
+h5{
+	font-size: 25px;
+	text-align: center;
+	font-family: "Sigmar One";
+	color: #ffffff;
+}
+
+.form-group{
+	color: #000000;
+	font-family: 'Tajawal';
+}
+a{
+	color: #042139;
+}
+.parent{
+	min-height: 200px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap
+}
+
+.fondo{
+background:#878080;
+font-color:#042139;
+}
+button{
+	font-family: "Sigmar One";
+	background: #A7C4C9;
+}
+.letra1{
+		font-family: "Sigmar One";
+	
+
+}
+
+img.img-fluid {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición para efecto hover */
+}
+
+img.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    margin: 10px;
+}
+.modal-content {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.modal-header, .modal-body {
+    border-bottom: none;
+}
+.modal-body h4 {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+}
+.product-container {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+  }
+  
+  .product-container img {
+	width: 100px;
+	height: auto;
+  }
+  
+

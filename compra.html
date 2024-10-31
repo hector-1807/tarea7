@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra de Licores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">Compra de Productos</h2>
+
+    <div class="product-container">
+      <!-- Producto 1 -->
+      <div class="card product-card">
+        <img src="img/foto1.png" class="card-img-top" alt="RON BOTRAN 15 AÑOS">
+        <div class="card-body">
+          <h5 class="card-title">Ron Botran 15 años</h5>
+          <p class="card-text">Q109.00</p>
+          <input type="checkbox" id="product1" name="product" value="109" onchange="updateTotal()">
+          <label for="product1">Agregar</label>
+          <input type="number" id="quantity1" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+      
+      <!-- Producto 2 -->
+      <div class="card product-card">
+        <img src="img/foto2.png" class="card-img-top" alt="Bacardi">
+        <div class="card-body">
+          <h5 class="card-title">Bacardi</h5>
+          <p class="card-text">Q70.00</p>
+          <input type="checkbox" id="product2" name="product" value="70" onchange="updateTotal()">
+          <label for="product2">Agregar</label>
+          <input type="number" id="quantity2" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="card product-card">
+        <img src="img/foto3.png" class="card-img-top" alt="Champagne Dom Pérignon">
+        <div class="card-body">
+          <h5 class="card-title">Champagne Dom Pérignon</h5>
+          <p class="card-text">Q3,500.00</p>
+          <input type="checkbox" id="product3" name="product" value="3500" onchange="updateTotal()">
+          <label for="product3">Agregar</label>
+          <input type="number" id="quantity3" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="card product-card">
+        <img src="img/foto4.png" class="card-img-top" alt="Whiskey Johnnie Walker">
+        <div class="card-body">
+          <h5 class="card-title">Ron Zacapa</h5>
+          <p class="card-text">Q1,030.00</p>
+          <input type="checkbox" id="product4" name="product" value="1030" onchange="updateTotal()">
+          <label for="product4">Agregar</label>
+          <input type="number" id="quantity4" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="card product-card">
+        <img src="img/foto5.png" class="card-img-top" alt="Tequila Don Julio">
+        <div class="card-body">
+          <h5 class="card-title">Champagne Moet</h5>
+          <p class="card-text">Q1,000.00</p>
+          <input type="checkbox" id="product5" name="product" value="1000" onchange="updateTotal()">
+          <label for="product5">Agregar</label>
+          <input type="number" id="quantity5" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="card product-card">
+        <img src="img/foto6.png" class="card-img-top" alt="Vodka Absolut">
+        <div class="card-body">
+          <h5 class="card-title">Tequila Clase Azul</h5>
+          <p class="card-text">Q2,200.00</p>
+          <input type="checkbox" id="product6" name="product" value="2200" onchange="updateTotal()">
+          <label for="product6">Agregar</label>
+          <input type="number" id="quantity6" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+
+      <!-- Producto 7 -->
+      <div class="card product-card">
+        <img src="img/foto7.png" class="card-img-top" alt="Whiskey Jack Daniels">
+        <div class="card-body">
+          <h5 class="card-title">Tequila Gran Malo</h5>
+          <p class="card-text">Q180.00</p>
+          <input type="checkbox" id="product7" name="product" value="180" onchange="updateTotal()">
+          <label for="product7">Agregar</label>
+          <input type="number" id="quantity7" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+
+      <!-- Producto 8 -->
+      <div class="card product-card">
+        <img src="img/foto8.png" class="card-img-top" alt="Gin Tanqueray">
+        <div class="card-body">
+          <h5 class="card-title">Whiskey Etiqueta Verde</h5>
+          <p class="card-text">Q760.00</p>
+          <input type="checkbox" id="product8" name="product" value="760" onchange="updateTotal()">
+          <label for="product8">Agregar</label>
+          <input type="number" id="quantity8" value="1" min="1" class="form-control quantity" onchange="updateTotal()">
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery-options mt-4">
+      <h5>Opciones de entrega:</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="domicilio" name="delivery" value="domicilio" checked onchange="updateTotal()">
+        <label class="form-check-label" for="domicilio">A domicilio (+Q5.00)</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="recogida" name="delivery" value="recogida" onchange="updateTotal()">
+        <label class="form-check-label" for="recogida">Recoger en tienda</label>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <input type="checkbox" id="confirm" class="form-check-input" onchange="togglePurchaseButton()">
+      <label for="confirm" class="form-check-label">Acepto los términos y condiciones</label>
+    </div>
+
+    <div class="mt-3">
+      <button type="button" id="purchaseButton" class="btn btn-primary w-100" onclick="makePurchase()" disabled>Realizar compra</button>
+    </div>
+
+    <div class="total-container mt-3">
+      <h4 id="totalPrice">Total: Q0.00</h4>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

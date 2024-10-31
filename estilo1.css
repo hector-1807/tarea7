@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sigmar+One&family=Tajawal:wght@200&display=swap');
+
+
+body{
+	background:#F0EDE5 ;
+}
+  
+  h2 {
+    font-family: "Sigmar One";
+	color: #4A4031;
+  }
+  
+  .product-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 18rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .quantity {
+    width: 80px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .delivery-options {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .total-container {
+    text-align: center;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
